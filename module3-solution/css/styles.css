@@ -1,0 +1,23 @@
+body {
+	font-size: 16px;
+	/*color: #fff;
+	background-color: ;*/
+	font-family: sans-serif;
+}
+
+/** HEADER ******/
+#header-nav {
+	border-radius: 0;
+	border: 0;
+}
+/** END HEADER **/
+
+#chicken, #beef, #sushi {
+	background-color: #999;
+	margin-bottom: 30px;
+	height: 1000px;
+}
+
+/** LARGE DEVICES ONLY **/
+/** MEDIUM DEVICES ONLY **/
+/** SMALL DEVICES ONLY **/
