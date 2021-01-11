@@ -9,6 +9,9 @@ angular.module('ShoppingListCheckOff', [])
 ToBuyController.$inject = ["ShoppingListCheckOffService"];
 function ToBuyController(ShoppingListCheckOffService) {
     var buy = this;
+    buy.buyItem = function() {
+        ShoppingListCheckOffService.buyItem();
+    }; 
 }
 
 ToBuyController.$inject = ["ShoppingListCheckOffService"];
@@ -22,6 +25,11 @@ function ShoppingListCheckOffService() {
     // Item Lists
     var toBuy = [];
     var alreadyBought = [];
+
+    service.buyItem = function(value) {
+        alreadyBought.pust(value);
+        toBup.splice(value);
+    };
 }
 
 }());
