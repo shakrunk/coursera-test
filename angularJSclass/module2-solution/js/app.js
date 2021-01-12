@@ -23,6 +23,11 @@ function AlreadyBoughtController(ShoppingListCheckOffService) {
     var bought = this;
     
     bought.list = ShoppingListCheckOffService.alreadyBought; // The list of bought items
+    
+    // -- DEBUG --
+    // console.log("debug: end AlreadyBoughtController || bought.list = " + bought.list + "additional str");
+    // console.log("debug: Boolean(bought.list==[]) = " + Boolean(bought.list==[]));
+    // console.log("debug: bought.list.length = " + bought.list.length);
 }
 
 function ShoppingListCheckOffService() {
@@ -56,6 +61,10 @@ function ShoppingListCheckOffService() {
         service.alreadyBought.push(reformatted); // Adds the bought item to the bought list
 
         service.toBuy.splice(index, 1); // Removes the bought item from the to-buy list
+        
+        // -- DEBUG --
+        // console.log("debug: end service.toBuy function || service.alreadyBought = " + service.alreadyBought);
+        // console.log("debug: Boolean(service.alreadyBought) = " + Boolean(service.alreadyBought)   );
     };
 }
 
