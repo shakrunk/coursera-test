@@ -35,10 +35,10 @@ function ShoppingListCheckOffService() {
 
     // Item Lists
     service.toBuy = [{name: "cookies", quantity: 5},
-                     {name: "cookies", quantity: 10},
-                     {name: "cookies", quantity: 15},
-                     {name: "cookies", quantity: 20},
-                     {name: "cookies", quantity: 25}];
+                     {name: "biscuits", quantity: 10},
+                     {name: "crakers", quantity: 15},
+                     {name: "wafers", quantity: 20},
+                     {name: "pretzels", quantity: 25}];
 
     service.alreadyBought = [];
 
